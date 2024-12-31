@@ -37,7 +37,7 @@ public class VendorsPage  extends ProjectSpecificMethods{
 		return this;
 	}
 	public VendorsPage clickVendorDeleteIcon() {
-		click(locateElement(Locators.XPATH,"(//table[contains(@class,'MuiTable-root')]//td[1]/following::*[local-name()='svg'])[2]"));
+		click(locateElement(Locators.XPATH,"(//span[contains(@class,'MuiIconButton-label')])[5]"));
 		reportStep("Vendor Delete icon clicked  successfully", "pass");
 		return this;
 	}

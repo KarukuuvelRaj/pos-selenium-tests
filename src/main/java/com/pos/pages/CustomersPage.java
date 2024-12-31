@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.framework.selenium.api.design.Locators;
 import com.framework.testng.api.base.ProjectSpecificMethods;
@@ -32,6 +33,7 @@ public class CustomersPage extends ProjectSpecificMethods {
 	}
 	public CustomersPage verifyCustomerNameChanged(String customerId, String customerNameChanged) {
 		verifyPartialText(locateElement(Locators.XPATH, "//td[text()='"+customerId+"']/following-sibling::td"), customerNameChanged);
+		//verifyPartialText(locateElement(Locators.XPATH, "//td[text()=\"Raman\"]"), customerNameChanged);
 		reportStep(customerNameChanged+" Customer name is changed successfully", "pass");
 		return this;
 	}

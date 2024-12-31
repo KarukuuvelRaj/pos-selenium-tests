@@ -7,7 +7,6 @@
 			<class name="com.pos.testcases.CreateNewVendor" />
 			<class name="com.pos.testcases.EditVendor" />
 			<class name="com.pos.testcases.DeleteVendor" />
-
 		</classes>
 	</test>
 	 <!-- <test name="firefox" parallel="true" thread-count="3">
@@ -26,7 +25,6 @@
 			<class name="com.pos.testcases.CreateNewCustomer" />
 			<class name="com.pos.testcases.EditCustomer" />
 			<class name="com.pos.testcases.DeleteCustomer" />
-
 		</classes>
 	</test> 
 
